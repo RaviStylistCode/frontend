@@ -1,11 +1,14 @@
 import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 import logo from "../../assets/logo.jpg"
+import ravi from "../../assets/ravi2.png"
+import { IoLogoInstagram } from "react-icons/io5";
+import { FaLinkedin,FaGithub } from "react-icons/fa";
 
 const Home = () => {
   return (
    <>
-    <div className=" justify-evenly m-2 w-full flex flex-col-reverse p-3 sm:flex-row sm:pt-[100px] sm:pr-[70px] sm:pl-[70px]">
+    <div className=" justify-evenly m-2 w-full flex flex-col-reverse p-3 sm:flex-row sm:pt-[100px]  sm:pl-[70px]">
       <div className="w-1/2 h-full p-1">
         <h1 className='text-xl p-2 text-teal-600 font-bold'>HELLO,</h1>
         <h2 className=' text-5xl sm:text-7xl p-2 text-gray-400'>I'm <span className='text-rose-500 font-bold text-5xl sm:text-7xl'>Ravibhushan</span></h2>
@@ -24,9 +27,9 @@ const Home = () => {
         </h1>
         {/* icons */}
         <div className='flex flex-row gap-5 bg-gray p-8'>
-            <div className='bg-white rounded-full p-4 hover:bg-red-500 shadow-2xl cursor-pointer '>1111</div>
-            <div className='bg-white rounded-full p-4 hover:bg-blue-500 shadow-2xl cursor-pointer'>2222</div>
-            <div className='bg-white rounded-full p-4 hover:bg-green-500 shadow-2xl cursor-pointer'>3333</div>
+            <div title='Instagram' className='bg-white rounded-full p-4 hover:bg-red-500 shadow-2xl hover:text-white cursor-pointer '><a href="https://www.instagram.com/__coder.ravi/" target='_blank' className='text-2xl hover:text-white text-red-600'><IoLogoInstagram /></a></div>
+            <div title='Linkedin' className='bg-white rounded-full p-4 hover:bg-blue-500 shadow-2xl cursor-pointer'><a target='_blank' href="https://www.linkedin.com/in/ravi-sihag/" className='text-2xl hover:text-white text-blue-500'><FaLinkedin /></a></div>
+            <div title='Github' className='bg-white rounded-full p-4 hover:bg-gray-500 shadow-2xl cursor-pointer'><a target='_blank' href="https://github.com/RaviStylistCode" className='text-2xl hover:text-white text-blue-500'><FaGithub /></a></div>
         </div>
         {/* icons end */}
         <div className='flex flex-row'>
@@ -34,7 +37,7 @@ const Home = () => {
             {/* <button className=' text-rose-400 p-4 rounded-xl m-2 border-2 hover:bg-rose-600 hover:text-white delay-200'>Linkedin</button> */}
         </div>
       </div>
-      <img src={logo} alt="myimg" className=' w-96  hover:hue-rotate-15 shadow-lg shadow-cyan-500/50 rounded-full sm:h-[400px] m-5 ' />
+      <img src={logo} alt="myimg" className=' w-96  hover:hue-rotate-15 shadow-lg shadow-cyan-500/50 rounded-full sm:h-[400px] m-5 sm:ml-[110px]  ' />
     </div>
 
     {/*interest  */}
@@ -51,8 +54,8 @@ const Home = () => {
     </div>
     {/* interest end */}
 
-    <div className=' w-full h-full justify-evenly sm:p-5 flex gap-5 flex-col sm:flex-row p-[50px]'>
-        <img  src={logo} alt='myimg' className='w-full rounded sm:w-96 h-full p-17 sm:p-0 ml-16 sm:m-0'/>
+    <div className=' w-full h-full justify-evenly sm:p-5 flex gap-5 flex-col sm:flex-row p-[30px]'>
+        <img  src={ravi} alt='myimg' className='w-full  sm:h-[450px] rounded sm:w-96 h-full p-17 sm:p-0 ml-15 sm:m-0'/>
         <div className=' bg-white p-3 w-96 sm:w-full'>
             <p className='  text-lg text-gray-400 text-justify sm:text-left font-semibold font-serif p-6'>Hey! 😄 My name is Ravibhushan, Self Driven, Quick Starter Passionate Programmer With Curious Mind Focused and enthusiastic developer with a keen interest in software development and Coompetitive Programming. By comprehensive exposure to the underlying concepts and applying them vividly to various projects, my love for these domains came into being. I am a passionate individual who thrives to build and apply algorithms to solve real-world problems.</p>
 
